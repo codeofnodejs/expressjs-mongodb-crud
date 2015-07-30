@@ -9,6 +9,7 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 //database
 var db = require('./model/db');
+var blob = require('./model/blobs');
 
 var app = express();
 
@@ -57,6 +58,5 @@ app.use(function(err, req, res, next) {
     error: {}
   });
 });
-
 
 module.exports = app;
